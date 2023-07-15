@@ -30,25 +30,85 @@ input {
 
 .home__header nav{
     margin: 20px auto;
+    display: none;
 }
 
 .burger-menu {
     background-color: var(--celeste);
     padding: 10px;
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
     border-radius: 5px;
     display: inline-block;
 }
 
-.publicidad {
+.home__banner {
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/* MAIN */
+.home__main {
+    width: 100%;
+    background-color: var(--grisClaro);
+    padding-bottom: 50px;
+}
+
+.home__main__section--products {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+}
+
+.home__main__section--products h2 {
+    color: var(--grisOscuro);
+    font-size: 20px;
+}
+
+.home__main img {
     width: 100%;
 }
 
-/* MAIN */
-
-main {
-    display: none;
+.home__main__section__article-product {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
 }
+
+.home__main__section__article--info-product {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-weight: 500;
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+}
+
+.home__main__section__article--truck i{
+    color: var(--verde);
+    border-radius: 50%;
+    border: 1px solid var(--verde);
+    padding: 8px;
+    font-size: 16px;
+}
+
+.home__main__section__article--info-product p {
+    font-size: 15px;
+}
+
+.home__main__section__article--info-product h4 {
+    display: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--grisOscuro);
+}
+
+.home__main__section__article--info-product-descuento {
+    color: var(--verde);
+} 
 
 /* FOOTER */
 
@@ -69,10 +129,37 @@ footer h4 {
     font-size: 16px;
 }
 
-p {
+.home__footer--description {
     margin-bottom: 50px;
 }
 
 .copyright {
     font-size: 10px;
+}
+
+
+@media (min-width:481px) {
+    
+    /* MAIN */
+
+    .home__main__section__article--info-product h4 {
+        display: block;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) {
+    /* HEADER */
+    .home__header nav{
+        display: block;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+    /* MAIN */
+
+    .home__main__section__article-product {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    } 
 }
