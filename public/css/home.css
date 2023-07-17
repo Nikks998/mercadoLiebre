@@ -85,19 +85,40 @@ input {
     font-weight: 500;
     background-color: #fff;
     border-top: 1px solid #ebebeb;
+    position: relative;
 }
 
 .home__main__section__article--truck i{
     color: var(--verde);
     border-radius: 50%;
     border: 1px solid var(--verde);
-    padding: 8px;
+    padding: 5px;
+    font-size: 16px;
+    right: 20px;
+    top: -15px;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
     font-size: 16px;
 }
 
-.home__main__section__article--info-product p {
-    font-size: 15px;
+.home__main__section__article--precio-descuento {
+    display: flex;
+    flex-direction: row;
 }
+
+
+.home__main__section__article--info-product-precio {
+    width: 75%;
+    font-size: 17px;
+}
+
+.home__main__section__article--info-product-descuento {
+    width: 25%;
+    color: var(--verde);
+    font-size: 15px;
+} 
 
 .home__main__section__article--info-product h4 {
     display: none;
@@ -106,9 +127,7 @@ input {
     color: var(--grisOscuro);
 }
 
-.home__main__section__article--info-product-descuento {
-    color: var(--verde);
-} 
+
 
 /* FOOTER */
 
@@ -142,9 +161,28 @@ footer h4 {
     
     /* MAIN */
 
+    .home__main__section-last-views {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 8px;
+    }
+
+    .home__main__section__article-product {
+        width: 47%;
+    } 
+
+    .home__main__section__article--info-product-precio {
+        width: 60%;
+    }
+
+    .home__main__section__article--info-product-descuento {
+        width: 40%;
+    }
+
     .home__main__section__article--info-product h4 {
         display: block;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -159,7 +197,28 @@ footer h4 {
     }
     /* MAIN */
 
+    .home__main__section--products h2 {
+        font-size: 25px;
+    }
+
+    .home__main__section-last-views {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 27px;
+    }
+
     .home__main__section__article-product {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 47%;
     } 
+
+    .home__main__section__article--info-product-precio {
+        width: 75%;
+    }
+
+    .home__main__section__article--info-product-descuento {
+        width: 25%;
+    }
+
 }
