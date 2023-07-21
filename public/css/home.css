@@ -42,10 +42,12 @@
     margin: 6px;
     padding: 0 0 0 5px;
     border-left: 1px solid var(--grisOscuro);
+    opacity: .6;
 }
 
 .home__header--form button i {
     font-size: 18px;
+    cursor: pointer;
 }
 
 .home__header--subtitle{
