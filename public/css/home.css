@@ -318,10 +318,17 @@ footer h4 {
 
     }
 
+    .home__header--subtitle h3 {
+        font-size: 15px;
+    }
+
+    .home__header--navbar ul li a {     
+        font-size: 14px;
+    }
+
     /* MAIN */
 
     .home__main__section__article-product {
         width: 20%;
     } 
-
 }
