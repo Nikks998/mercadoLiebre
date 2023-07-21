@@ -17,15 +17,39 @@
 }
 
 .home__header--searchbar{
-    margin: 0 auto 20px;
+    padding: 0 15px;
 }
 
-input {
-    width: 150px;
+.home__header--form {
+    position: relative;
 }
 
-.home__header--searchbar h3{
-    margin-top: 10px;
+.home__header--form input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    border-radius: 4px;
+}
+
+.home__header--form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: var(--grisOscuro);
+    margin: 6px;
+    padding: 0 0 0 5px;
+    border-left: 1px solid var(--grisOscuro);
+}
+
+.home__header--form button i {
+    font-size: 18px;
+}
+
+.home__header--subtitle{
+    margin: 10px 0;
 }
 
 .home__header nav{
@@ -158,6 +182,22 @@ footer h4 {
 
 
 @media (min-width:481px) {
+
+    /* HEADER */
+
+    .home__header--logo-searchbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .home__header--box-logo{
+        width: 49%;
+    }
+
+    .home__header--searchbar {
+        width: 49%;
+    }
     
     /* MAIN */
 
@@ -187,8 +227,39 @@ footer h4 {
 }
 
 @media (min-width: 769px) {
+
     /* HEADER */
+
+    .home__header--top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home__header--logo-searchbar {
+        width: 70%;
+    }
+
+    .home__header--box-logo {
+        width: 40%;
+    }
+
+    .home__header--navbar-container {     
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home__header--navbar ul{
+        display: flex;
+    }
+
+    .home__header--navbar ul li {
+        padding: 0 10px;
+    }
+
+
     .home__header nav{
+        margin: 15px auto;
         display: block;
     }
 
@@ -220,5 +291,35 @@ footer h4 {
     .home__main__section__article--info-product-descuento {
         width: 25%;
     }
+
+}
+
+@media (min-width: 1024px) {
+    
+    /* HEADER */
+
+    .home__header--top {
+        justify-content: space-around;
+    }
+
+    .home__header--logo-searchbar {
+        width: 70%;
+        justify-content: space-between;
+    }
+    
+    .home__header--box-logo {
+        width: 20%;
+    }
+
+    .home__header--searchbar {
+        width: 70%;
+
+    }
+
+    /* MAIN */
+
+    .home__main__section__article-product {
+        width: 20%;
+    } 
 
 }
