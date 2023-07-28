@@ -37,8 +37,7 @@
     padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    
+    gap: 15px; 
 }
 
 .user-interests-checkbox {
@@ -76,6 +75,22 @@
     .register__main__section form{
         width: 50%;
         margin: 20px auto;
+    }
+
+    .register__main__section form .input-1{
+        font-size: 1.3rem;
+     }
+
+     .register__main__section-user-profile label{
+        font-size: 1.2rem;
+    }
+    
+    .register__main__section-intereses label{
+        font-size: 1.2rem; 
+    }
+
+    .register__main__section-form-button {
+        font-size: 1.2rem;
     }
 }
 
