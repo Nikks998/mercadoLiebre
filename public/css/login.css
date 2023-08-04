@@ -36,6 +36,11 @@
     border-radius: 5px;
     cursor: pointer;
     text-transform: uppercase;
+    transition: all .5s ease;
+}
+
+.login__main__section-form-button:hover {
+    background: #0022AA;
 }
 
 @media (min-width:481px) {

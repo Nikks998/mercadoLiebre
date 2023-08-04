@@ -54,9 +54,17 @@
     margin: 10px 0;
 }
 
-.home__header nav{
-    margin: 20px auto;
-    display: none;
+.home__header--navbar-container{
+    height: 0;
+    overflow: hidden;
+}
+
+.home__header nav {
+    padding: 20px 0;
+}
+
+.showMenu {
+    height: auto;
 }
 
 .burger-menu {
@@ -65,6 +73,7 @@
     margin: 0 auto 15px;
     border-radius: 5px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .home__banner {
@@ -129,6 +138,22 @@
     font-size: 16px;
 }
 
+.home__main__section__article--truck i:hover {
+    animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: rotate(0);
+    }
+}
+
 .home__main__section__article--precio-descuento {
     display: flex;
     flex-direction: row;
@@ -147,12 +172,17 @@
 } 
 
 .home__main__section__article--info-product h4 {
-    display: none;
+    height: 0;
+    overflow: hidden;
     font-size: 16px;
     font-weight: 500;
     color: var(--grisOscuro);
+    transition: all .5s ease;
 }
 
+.home__main__section__article-product:hover h4 {
+    height: 18px;
+}
 
 
 /* FOOTER */
@@ -168,6 +198,12 @@ footer {
 footer a i{
     font-size: 2em;
     margin-bottom: 10px;
+    transition: all .3s ease;
+    color: #1259c3;
+}
+
+footer a i:hover {
+    color: rgba(18, 89, 195, .5);
 }
 
 footer h4 {
@@ -212,7 +248,12 @@ footer h4 {
 
     .home__main__section__article-product {
         width: 47%;
+        transition: all .5s ease;
     } 
+
+    .home__main__section__article-product:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 
     .home__main__section__article--info-product-precio {
         width: 60%;
@@ -223,7 +264,6 @@ footer h4 {
     }
 
     .home__main__section__article--info-product h4 {
-        display: block;
         font-size: 16px;
     }
 }
@@ -259,10 +299,13 @@ footer h4 {
         padding: 0 10px;
     }
 
+    .home__header--navbar-container {
+        height: auto;
+    }
 
     .home__header nav{
         margin: 15px auto;
-        display: block;
+        padding: 0;
     }
 
     .burger-menu {
@@ -282,9 +325,10 @@ footer h4 {
     }
 
     .home__main__section__article-product {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
         width: 47%;
     } 
+
+
 
     .home__main__section__article--info-product-precio {
         width: 75%;
@@ -292,6 +336,12 @@ footer h4 {
 
     .home__main__section__article--info-product-descuento {
         width: 25%;
+    }
+
+    /* FOOTER */
+
+    footer section {
+        display: flex;
     }
 
 }
